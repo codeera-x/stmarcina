@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St Marcina | Vaccination</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.png" alt="logo" />
+          <div>St Marcina <span>Hospital</span></div>
+        </a>
+        <ul class="menu" role="list">
+          <li role="listitem">
+            <a href="./index.html">Home</a>
+          </li>
+          <li role="listitem">
+            <a href="./aboutus.html">About Us</a>
+          </li>
+          <li role="listitem">
+            <a href="./services.html">Services</a>
+          </li>
+          <li class="active" role="listitem">
+            <a href="./vacc.html">Vaccination</a>
+          </li>
+          <li role="listitem">
+            <a href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="cta"><a href="#">Make Appointment</a></div>
+        <div onclick="toggleMenu()" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-vacc">
+      <div class="vacc-div">
+        <h1>
+          <span class="heart-icon"><i class="fa-solid fa-syringe"></i></span>
+          Vaccination Checker
+        </h1>
+        <h2>
+          Protect Your Child <br />
+          Vaccinate for free !!
+        </h2>
+        <p>
+          Check your child's eligiblility for
+          <span> free vaccination</span> and book your visit today
+        </p>
+      </div>
+
+    </section>
+
+    <section class="eligible">
+      <div>
+        <form>
+          <h2>Is your child eligible?</h2>
+          <div class="eligible-form">
+            <input
+            required
+              class="childAge"
+              type="number"
+              name="age"
+              placeholder="Your child's age" />
+
+              <select class="disease" name="disease">
+                <option class="option first" value="">Does your child have any disease?</option>
+                <option class="option" value="Y">Child has disease</option>
+                <option class="option" value="N">Child has no disease</option>
+              </select>
+
+            <input
+            required
+              class="familyIncome"
+              type="number"
+              name="income"
+              placeholder="Family's Annual Income" />
+
+            <button type="submit" class="checkBtn">Check</button>
+
+            <p id="ansEligible"> 
+
+            </p>
+          </div>
+        </form>
+        <br>
+        <table>
+          <tr>
+            <th>Age Group</th>
+            <th>Vaccines Provided</th>
+          </tr>
+          <tr>
+            <td>Birth-6 weeks</td>
+            <td>BCG, Hep B, OPV</td>
+          </tr>
+          <tr>
+            <td>6-14 weeks</td>
+            <td>DPT, Hep B, Hib, Polio</td>
+          </tr>
+          <tr>
+            <td>9 months</td>
+            <td>Measles, Yellow Fever</td>
+          </tr>
+          <tr>
+            <td>15 months+</td>
+            <td>MMR, Typhoid (if due)</td>
+          </tr>
+        </table>
+      </div>
+      <div class="form-img">
+        <img src="./images/eliform3.png" alt="image" />
+      </div>
+    </section>
+
+    <section class="why-vaccine">
+      <div class="about-vaccine">
+        <div class="why-vacc">
+          <h2>Why Vaccinations matter</h2>
+          <p>
+            Vaccines protect children from deadly diseases like measles,
+            diphtheria, and polio. <br> Early vaccination helps build strong immunity
+            for life.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>Saves millions of lives
+              yearly
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>Recommended by WHO & NCDC
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>Safe, effective, and free at
+              our center
+            </li>
+          </ul>
+        </div>
+        <div class="how-vacc">
+          <h2>
+            How to get vaccinated
+          </h2>
+          <ul>
+            <li>1. Check eligibility</li>
+            <li>2. Book an appointment or walk in</li>
+            <li>3. Bring child's birth certificate or ID</li>
+            <li>4. Receive vaccination and records</li>
+          </ul>
+          <p>Don't wait. Give your child the protection they deserve.</p>
+        </div>
+      </div>
+      <div class="cta-vacc"><a href="#">Book free vaccination</a></div>
+    </section>
+         <footer>
+      <section class="footer-section">
+        <div class="footer1">
+          
+          <div class="footer-logo">
+          <img src="./images/logos2.png" alt="logo">
+          <h2>St. Marcina Hospital ltd.</h2>
+          </div>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel fuga
+            corporis voluptatum architecto illo voluptatem in placeat ducimus.
+          </p>
+          <div class="cta3">
+            <a href="#"
+              ><span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              info@stmarcinahosital.com</a
+            >
+          </div>
+          <div class="cta3">
+            <a href="#"
+              ><span class="icon"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              11, Temidire Street,MKO Abiola Way, Ibadan</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-list">
+          <h3>Quick Links</h3>
+          <ul class="Qlink" role="list">
+            <li class="Qlink-item" role="listitem">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="Qlink-item" role="listitem">
+              <a href="./aboutus.html">About Us</a>
+            </li>
+            <li class="Qlink-item" role="listitem">
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="Qlink-item" role="listitem">
+              <a href="./vacc.html">Vaccination</a>
+            </li>
+            <li class="Qlink-item" role="listitem">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-call">
+          <h3>Book an Appointment</h3>
+          <p>The doctorate staff members are well trained professionals</p>
+          <div class="cta4">
+            <a href="#"><i class="fa-solid fa-phone"></i> Call: 08167437365</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer-copyright">
+        <p>All Rights Reserved &copy; St. Marcina Hospital ltd. 2025 </p>
+        <p>   Terms & Conditions </p>
+        <p>  Privacy Policy</p>
+      </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+  </body>
+</html>
