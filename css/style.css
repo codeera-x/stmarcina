@@ -813,13 +813,13 @@ font-size: 1.9rem;
 }
 
 .intro-service{
-  padding: 8rem 0;
+  padding: 10rem 0;
 }
 
 .intro-service h1{
  font-size: 2.5rem;
  font-weight: 700;
- padding-block-end: 1rem;
+ padding-block-end: 2rem;
  position: relative;
  z-index: 40;
  text-align: center;
@@ -1407,6 +1407,10 @@ td{
   width: 100%;
 }
 
+.our-facilities .one-div{
+  grid-template-columns: repeat(1, 1fr);
+}
+
 .one div{
   text-align: center;
   padding: 0;
@@ -1416,6 +1420,13 @@ td{
   border-block: 2px solid #a5d6a7;
   border-inline: none;
 }
+
+.footer1 h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-block-end: 0.5rem;
+}
+
 
 .footer-section{
   grid-template-columns: repeat(1, 2fr);
